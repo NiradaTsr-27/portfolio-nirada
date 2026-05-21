@@ -1,0 +1,19 @@
+.body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--background);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  font-family: var(--font-geist-sans), 'Outfit', 'Inter', sans-serif;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+  position: relative;
+  z-index: 20;
+  user-select: text;
+}

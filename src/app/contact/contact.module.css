@@ -1,0 +1,424 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(to bottom, var(--card-bg), var(--background));
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.headerContent h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.headerContent p {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* CONTACT SECTION */
+.contactSection {
+  width: 100%;
+  max-width: 1200px;
+  padding: 4rem 2rem 6rem;
+  margin: 0 auto;
+}
+
+.contactWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 6rem;
+}
+
+/* CONTACT INFO */
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfo h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.contactInfo p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin-bottom: 3rem;
+}
+
+.infoBlocks {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.infoBlock h3, .socials h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.infoBlock a {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.infoBlock a:hover {
+  color: var(--accent);
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.socialLink {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  position: relative;
+  transition: color 0.2s;
+}
+
+.socialLink:hover {
+  color: var(--accent);
+}
+
+/* FORM */
+.formContainer {
+  background-color: var(--card-bg);
+  padding: 3rem;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  background-color: var(--card-bg);
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.cardSpacing {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.infoBlock {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.dividerSection {
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+  display: grid;
+  gap: 1rem;
+}
+
+.emailRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.copyButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(15, 23, 42, 0.9);
+  color: #94a3b8;
+  transition: all 0.2s ease;
+}
+
+.copyButton:hover {
+  color: white;
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+.socialRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.socialButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(15, 23, 42, 0.7);
+  color: #94a3b8;
+  transition: all 0.2s ease;
+}
+
+.socialButton:hover {
+  color: white;
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+.socialIcon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.mapCard {
+  position: relative;
+  display: grid;
+  aspect-ratio: 4 / 3;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.mapOverlay {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(30, 41, 59, 1) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+  opacity: 0.4;
+}
+
+.mapCircle {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 9999px;
+  background: rgba(56, 189, 248, 0.12);
+  filter: blur(1rem);
+}
+
+.mapContent {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+}
+
+.mapPulse,
+.mapDot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 9999px;
+  background: #22d3ee;
+}
+
+.mapPulse {
+  position: absolute;
+  animation: ping 1.5s infinite ease-in-out;
+}
+
+.mapDot {
+  position: relative;
+}
+
+.mapLabel {
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.85rem;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  color: #94a3b8;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family: var(--font-mono), monospace;
+}
+
+.formRow {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.inputLabel {
+  color: #94a3b8;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(15, 23, 42, 0.75);
+  color: #f8fafc;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.textarea {
+  min-height: 12rem;
+  resize: none;
+}
+
+.submitButtonWrapper {
+  padding-top: 0.5rem;
+}
+
+.sendIcon {
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.pulseIcon {
+  animation: pulse 1s infinite;
+}
+
+.toast {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  background: rgba(16, 185, 129, 0.08);
+  color: #2dd4bf;
+}
+
+.toastTitle {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.toastBody {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.toastIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.submitBtn {
+  margin-top: 1rem;
+  background-color: var(--text-primary);
+  color: var(--background);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.submitBtn:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgba(34, 197, 94, 0.1);
+  color: #16a34a;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+  animation: fadeIn 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .contactWrapper {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    padding: 2rem 1.5rem;
+  }
+}

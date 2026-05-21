@@ -1,0 +1,212 @@
+.trigger {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 40;
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(15, 23, 42, 0.6);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+@media (min-width: 768px) {
+  .trigger {
+    display: flex;
+  }
+}
+
+.kbd {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  font-family: var(--font-geist-mono);
+  font-size: 0.7rem;
+}
+
+.dialogWrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1rem;
+  padding-top: 15vh;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 7, 18, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.panel {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 40rem;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  border: 1px solid var(--border);
+  background: rgba(3, 7, 18, 0.9);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(18px);
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.5);
+}
+
+.searchIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.searchInput {
+  flex: 1;
+  padding: 1rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 0.95rem;
+  min-width: 0;
+  outline: none;
+}
+
+.escapeButton {
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.8);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.escapeButton:hover {
+  color: #fff;
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+.suggestions {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.triggerWrapper {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 40;
+}
+
+.sectionGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.emptyState {
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.sectionTitle {
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.commandItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.commandItem:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.itemLeft {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 1rem;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.commandItem:hover .iconWrapper {
+  color: #d8b4fe;
+  border-color: rgba(168, 85, 247, 0.4);
+}
+
+.itemTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.itemDesc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.statusBadge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.8rem;
+  background: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  color: #d8b4fe;
+  font-weight: 700;
+}
