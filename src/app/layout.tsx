@@ -26,21 +26,21 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Thorne | Senior Full Stack & AI Engineer",
-  description: "Senior Developer portfolio showcasing custom LLM integration canvas platforms, 3D store hubs, and sleek SaaS product structures.",
-  metadataBase: new URL("https://alexthorne.dev"),
+  title: "Portfolio Nirada",
+  description: "",
+  metadataBase: new URL(""),
   openGraph: {
-    title: "Alex Thorne | Senior Full Stack & AI Engineer",
-    description: "Senior Developer portfolio showcasing custom LLM integration canvas platforms, 3D store hubs, and sleek SaaS product structures.",
-    url: "https://alexthorne.dev",
-    siteName: "Alex Thorne Portfolio",
+    title: "Portfolio Nirada",
+    description: "",
+    url: "",
+    siteName: "Nirada Portfolio",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alex Thorne | Senior Full Stack & AI Engineer",
-    description: "Senior Developer portfolio showcasing custom LLM integration canvas platforms, 3D store hubs, and sleek SaaS product structures.",
+    title: "Portfolio Nirada",
+    description: "",
   }
 };
 
