@@ -27,12 +27,12 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "Portfolio Nirada",
-  description: "",
-  metadataBase: new URL(""),
+  description: "New Grads",
+  metadataBase: new URL("http://localhost:3000"),
   openGraph: {
     title: "Portfolio Nirada",
-    description: "",
-    url: "",
+    description: "New Grads",
+    url: "http://localhost:3000",
     siteName: "Nirada Portfolio",
     locale: "en_US",
     type: "website",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Portfolio Nirada",
-    description: "",
+    description: "New Grads",
   }
 };
 
