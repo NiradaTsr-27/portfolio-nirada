@@ -211,7 +211,7 @@ export default function Home() {
       <section id="projects" className={styles.sectionBlock}>
         <div className={styles.sectionHeaderSplit}>
           <div>
-            <h2 className={styles.sectionTitle}>Featured Work</h2>
+            <h2 className={styles.sectionTitle}>Projects</h2>
           </div>
           {/* <Link href="/projects" className={styles.sectionLink}>
             <span>View all projects</span>
@@ -237,11 +237,7 @@ export default function Home() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 48vw, 480px"
                   priority={idx < 2}
                 />
-                <div className={styles.projectPreviewOverlay} />
-                <span className={styles.projectPreviewContent}>
-                  {/* <Layers className={styles.actionIcon} /> */}
-                  <span>{project.title} Preview</span>
-                </span>
+
               </div>
 
               {/* Title & Desc */}
