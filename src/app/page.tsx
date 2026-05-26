@@ -130,7 +130,7 @@ export default function Home() {
               </Button>
             </Link>
 
-            <a href="#" download>
+            <a href="/resume-nirada.pdf" download>
               <Button
                 variant="secondary"
                 size="md"
